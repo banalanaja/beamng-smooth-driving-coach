@@ -1,0 +1,24 @@
+{
+  "domElement": "<smooth-driving-coach></smooth-driving-coach>",
+  "name": "Smooth Driving Coach",
+  "types": [
+    "ui.apps.categories.vehicle_info",
+    "ui.apps.categories.debug"
+  ],
+  "description": "Treinador de direção suave para volante, pedais e câmbio H: bola G compensada por inclinação (copo d'água), gráfico de Força G e Tranco (Jerk), nota de suavidade (0-100%), diagnóstico de causa e alerta sonoro sutil.",
+  "css": {
+    "left": "20px",
+    "top": "20px",
+    "width": "340px",
+    "height": "175px",
+    "min-width": "280px",
+    "min-height": "145px"
+  },
+  "author": "banalanaja",
+  "version": "1.0.0",
+  "preserveAspectRatio": false,
+  "directive": "smoothDrivingCoach",
+  "category": "Dashboard",
+  "isAuxiliary": false,
+  "interactive": "yes"
+}

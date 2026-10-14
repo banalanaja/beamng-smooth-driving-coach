@@ -1,0 +1,238 @@
+.sdc-root {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.43);
+  color: #ffffff;
+  font-family: "Overpass", "Noto Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 6px 8px;
+  user-select: none;
+  overflow: hidden;
+  position: relative;
+}
+
+.sdc-main {
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  min-height: 0;
+  gap: 8px;
+  align-items: stretch;
+}
+
+.sdc-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 112px;
+  flex: 0 0 112px;
+}
+
+.sdc-radar-wrap {
+  position: relative;
+  width: 106px;
+  height: 106px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sdc-radar-canvas {
+  width: 106px;
+  height: 106px;
+  display: block;
+}
+
+.sdc-incline-row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Overpass Mono", "Noto Sans Mono", monospace;
+  font-size: 10px;
+  line-height: 1.2;
+  color: #c0c0c0;
+  padding: 1px 2px 0 2px;
+  white-space: nowrap;
+}
+
+.sdc-incline-val {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.sdc-right {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  min-width: 0;
+  justify-content: space-between;
+}
+
+.sdc-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4px;
+  margin-bottom: 3px;
+}
+
+.sdc-score-block {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+}
+
+.sdc-label {
+  font-size: 10px;
+  letter-spacing: 0.4px;
+  color: #c0c0c0;
+  text-transform: uppercase;
+}
+
+.sdc-score-val {
+  font-family: "Overpass Mono", "Noto Sans Mono", monospace;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.sdc-metrics {
+  display: flex;
+  gap: 8px;
+  font-family: "Overpass Mono", "Noto Sans Mono", monospace;
+  font-size: 11px;
+  color: #c0c0c0;
+}
+
+.sdc-metric-num {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.sdc-actions {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.sdc-icon-btn {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: #c0c0c0;
+  border-radius: 2px;
+  width: 20px;
+  height: 18px;
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 11px;
+  line-height: 1;
+  transition: background 0.12s ease, color 0.12s ease;
+}
+
+.sdc-icon-btn:hover {
+  background: rgba(255, 102, 0, 0.35);
+  color: #ffffff;
+}
+
+.sdc-graph-wrap {
+  position: relative;
+  flex: 1 1 auto;
+  min-height: 54px;
+  width: 100%;
+  border: 1px solid rgba(63, 63, 63, 0.55);
+  box-sizing: border-box;
+}
+
+.sdc-graph-canvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.sdc-graph-legend {
+  position: absolute;
+  top: 2px;
+  left: 4px;
+  display: flex;
+  gap: 8px;
+  font-family: "Overpass Mono", "Noto Sans Mono", monospace;
+  font-size: 9px;
+  pointer-events: none;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.9);
+}
+
+.sdc-legend-g {
+  color: #a8dd73;
+}
+
+.sdc-legend-jerk {
+  color: #ff6600;
+}
+
+.sdc-diag-bar {
+  margin-top: 5px;
+  padding: 3px 6px;
+  background: rgba(0, 0, 0, 0.38);
+  border-left: 3px solid #a8dd73;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 20px;
+  box-sizing: border-box;
+  font-size: 11px;
+  line-height: 1.2;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.sdc-diag-cat {
+  font-family: "Overpass Mono", "Noto Sans Mono", monospace;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 1px 4px;
+  border-radius: 2px;
+  background: rgba(255, 255, 255, 0.1);
+  flex: 0 0 auto;
+}
+
+.sdc-diag-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #ffffff;
+}
+
+.sdc-zone-green {
+  color: #a8dd73;
+}
+
+.sdc-zone-amber {
+  color: #ffa53f;
+}
+
+.sdc-zone-red {
+  color: #ff4343;
+}
+
+.sdc-border-green {
+  border-left-color: #a8dd73;
+}
+
+.sdc-border-amber {
+  border-left-color: #ffa53f;
+  background: rgba(255, 165, 63, 0.12);
+}
+
+.sdc-border-red {
+  border-left-color: #ff4343;
+  background: rgba(255, 67, 67, 0.16);
+}
